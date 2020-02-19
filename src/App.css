@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* .header {
+  background-color: #e4e5e6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #00416a;
+} */
+
+.app {
+  background-color: #e4e5e6;
+  color: #00416a;
+  min-height: 100vh;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #e4e5e6;
+  background: rgb(0, 65, 106);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 65, 106, 1) 0%,
+    rgba(0, 65, 106, 0.6) 100%
+  );
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name {
+  margin: 0px;
+  letter-spacing: 10px;
+  font-size: 6.4rem;
+}
+.title {
+  margin: 10px 0;
+  letter-spacing: 3px;
+  font-size: 2rem;
+}
+
+.icon {
+  position: absolute;
+  opacity: 0.08;
+  background: rgb(0, 65, 106);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 9.6rem;
+}
+.main {
+  width: 100%;
+  font-size: 1.6rem;
+}
+.wrapper {
+  display: flex;
+  margin: auto;
+  width: 70%;
+}
+.section {
+  margin-top: 50px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-family: "OpenSans-Regular";
+}
+.sectionTitle {
+  margin: 0px 0 15px;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-family: "OpenSans-Bold", sans-serif;
+}
+.col1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfoRow {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.contactInfoText {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  color: rgb(0, 65, 106);
+  font-family: "OpenSans-Regular";
+  letter-spacing: 1px;
+}
+.eduLine1 {
+  font-size: 2rem;
+  font-family: "OpenSans-Bold";
+}
+.eduLine2 {
+  font-size: 1.7rem;
+  font-family: "OpenSans-Regular";
+}
+.eduLine3 {
+  font-size: 1.6rem;
+  font-family: "OpenSans-Regular";
+  color: #3c6c8b;
+}
+.eduLine4 {
+  font-size: 1.7rem;
+  font-family: "OpenSans-Bold";
+  font-style: italic;
+}
+.col2 {
+  width: 50%;
 }
