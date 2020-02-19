@@ -43,7 +43,10 @@ function App() {
               <div className="eduLine4">2008-2013</div>
             </Section>
           </div>
-          <div className="col2">col2</div>
+          <div className="col2">
+            {" "}
+            <Section title="Experience">todo</Section>
+          </div>
         </div>
       </main>
     </div>
