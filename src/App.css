@@ -23,6 +23,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
   color: #e4e5e6;
   background: rgb(0, 65, 106);
@@ -64,19 +65,34 @@
 .wrapper {
   display: flex;
   margin: auto;
-  width: 70%;
+  width: 95%;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    width: 70%;
+  }
 }
 .section {
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 2rem;
   letter-spacing: 1px;
   font-family: "OpenSans-Regular";
 }
+@media (min-width: 768px) {
+  .section {
+    margin-top: 50px;
+  }
+}
 .sectionTitle {
-  margin: 0px 0 15px;
+  margin: 0px 0 8px;
   font-size: 3rem;
   letter-spacing: 2px;
   font-family: "OpenSans-Bold", sans-serif;
+}
+@media (min-width: 768px) {
+  .sectionTitle {
+    margin: 0px 0 15px;
+  }
 }
 .col1 {
   width: 50%;
@@ -90,12 +106,16 @@
   font-size: 2rem;
   margin-bottom: 15px;
 }
+.contactInfoRow:last-child {
+  margin-bottom: 0px;
+}
 .contactInfoText {
   margin-left: 10px;
   font-size: 1.5rem;
   color: rgb(0, 65, 106);
   font-family: "OpenSans-Regular";
   letter-spacing: 1px;
+  text-decoration: none;
 }
 .eduLine1 {
   font-size: 2rem;
@@ -117,4 +137,53 @@
 }
 .col2 {
   width: 50%;
+}
+.skill {
+  padding: 0 30px 10px 0;
+  font-size: 1.5rem;
+}
+.skillsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.experienceWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.years {
+  width: 22%;
+  padding-right: 10px;
+}
+.yearsText {
+  padding: 5px;
+  background: rgb(0, 65, 106);
+  color: #e4e5e6;
+  border-radius: 6px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+}
+.jobDescription {
+  width: 75%;
+  border-left: 3px solid;
+  padding-left: 30px;
+}
+.position {
+  font-size: 2rem;
+  font-family: "OpenSans-Bold";
+}
+.company {
+  font-size: 1.7rem;
+  font-family: "OpenSans-Regular";
+}
+.location {
+  font-size: 1.6rem;
+  font-family: "OpenSans-Regular";
+  color: #3c6c8b;
+}
+.jobDetails {
+  margin-top: 5px;
+  font-size: 1.6rem;
 }
