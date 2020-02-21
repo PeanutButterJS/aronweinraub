@@ -9,6 +9,7 @@ export const ExperienceItem = ({
   <div className="experienceWrapper">
     <div className="years">
       <span className="yearsText">{years}</span>
+      <div className="circle" />
     </div>
     <div className="jobDescription">
       <div className="position">{position}</div>

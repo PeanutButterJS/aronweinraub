@@ -13,29 +13,29 @@ function App() {
         <h2 className="title">FRONTEND ARCHITECT & FULL STACK DEVELOPER</h2>
       </header>
       <main className="main">
+        <div className="contactInfo">
+          <div className="contactInfoRow">
+            <FaEnvelope />
+            <span className="contactInfoText">aeweinraub@gmail.com</span>
+          </div>
+          <div className="contactInfoRow">
+            <FaPhone />
+            <span className="contactInfoText">0583246041</span>
+          </div>
+          <div className="contactInfoRow">
+            <FaLinkedin />
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/aron-weinraub"
+              className="contactInfoText"
+            >
+              linkedin.com/in/aron-weinraub
+            </a>
+          </div>
+        </div>
         <div className="wrapper">
           <div className="col1">
-            <Section className="contactInfo">
-              <div className="contactInfoRow">
-                <FaEnvelope />
-                <span className="contactInfoText">aeweinraub@gmail.com</span>
-              </div>
-              <div className="contactInfoRow">
-                <FaPhone />
-                <span className="contactInfoText">0583246041</span>
-              </div>
-              <div className="contactInfoRow">
-                <FaLinkedin />
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.linkedin.com/in/aron-weinraub"
-                  className="contactInfoText"
-                >
-                  linkedin.com/in/aron-weinraub
-                </a>
-              </div>
-            </Section>
             <Section title="Education">
               <div className="eduLine1">Bachelor of Science (B.Sc.)</div>
               <div className="eduLine2">Computer Science</div>
@@ -56,7 +56,10 @@ function App() {
                 <div className="skill">MICROSERVICES / MICROFRONTENDS</div>
                 <div className="skill">SQL SERVER</div>
                 <div className="skill">MYSQL</div>
-                <div className="skill">POSTGRESQL</div>
+                <div className="skill">PLSQL</div>
+                <div className="skill">POSTGRESSQL</div>
+                <div className="skill">SSIS</div>
+                <div className="skill">GIT / VSTS / GITHUB</div>
               </div>
             </Section>
 

@@ -1,14 +1,3 @@
-/* .header {
-  background-color: #e4e5e6;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #00416a;
-} */
-
 .app {
   background-color: #e4e5e6;
   color: #00416a;
@@ -18,7 +7,7 @@
 
 .header {
   position: relative;
-  height: 300px;
+  height: 150px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -32,6 +21,11 @@
     rgba(0, 65, 106, 1) 0%,
     rgba(0, 65, 106, 0.6) 100%
   );
+}
+@media (min-width: 768px) {
+  .header {
+    height: 300px;
+  }
 }
 
 .name {
@@ -69,6 +63,11 @@
 }
 @media (min-width: 768px) {
   .wrapper {
+    width: 85%;
+  }
+}
+@media (min-width: 1550px) {
+  .wrapper {
     width: 70%;
   }
 }
@@ -95,20 +94,23 @@
   }
 }
 .col1 {
-  width: 50%;
+  width: 30%;
   display: flex;
   flex-direction: column;
 }
-
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 20px;
+}
 .contactInfoRow {
   display: flex;
   align-items: center;
+  padding: 0 20px;
   font-size: 2rem;
-  margin-bottom: 15px;
 }
-.contactInfoRow:last-child {
-  margin-bottom: 0px;
-}
+
 .contactInfoText {
   margin-left: 10px;
   font-size: 1.5rem;
@@ -136,12 +138,14 @@
   font-style: italic;
 }
 .col2 {
-  width: 50%;
+  width: 70%;
 }
 .skill {
-  padding: 0 30px 10px 0;
+  padding: 0 15px 0px 0;
+  width: 100%;
   font-size: 1.5rem;
 }
+
 .skillsWrapper {
   display: flex;
   flex-wrap: wrap;
@@ -153,7 +157,8 @@
 }
 .years {
   width: 22%;
-  padding-right: 10px;
+  padding-right: 20px;
+  position: relative;
 }
 .yearsText {
   padding: 5px;
@@ -164,15 +169,27 @@
   display: block;
   box-sizing: border-box;
   text-align: center;
+  font-size: 1.5rem;
+}
+@media (min-width: 1050px) {
+  .yearsText {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1350px) {
+  .yearsText {
+    font-size: 2rem;
+  }
 }
 .jobDescription {
   width: 75%;
   border-left: 3px solid;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 .position {
   font-size: 2rem;
   font-family: "OpenSans-Bold";
+  margin-top: -3px;
 }
 .company {
   font-size: 1.7rem;
@@ -186,4 +203,14 @@
 .jobDetails {
   margin-top: 5px;
   font-size: 1.6rem;
+}
+.circle {
+  width: 11px;
+  height: 11px;
+  border: 3px solid rgb(0, 65, 106);
+  background: #e4e5e6;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: -10px;
 }
