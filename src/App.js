@@ -71,7 +71,7 @@ function App() {
                 years="2016-present"
                 company="Rapaport – RapNet"
                 location="Jerusalem, Israel"
-                position="Cheif Frontend Architect & Senior Full Stack Developer"
+                position="Frontend Architect & Senior Full Stack Developer"
               >
                 Development of Rapaport Technologies’ flagship diamond trading
                 platform “RapNet”. Overseeing ReactJs/Redux frontend stack as
@@ -99,21 +99,46 @@ function App() {
                 location="Jerusalem, Israel"
                 position="Software/Web Developer"
               >
-                Research Success Data Systems- Development and maintenance of
-                data management systems using C#/ASP.Net/MVC and SQL-Server for
-                non-profit organizations including:  United Synagogue Youth
-                (USY)  Bnei Akiva  The Jerusalem Bird Observatory  The
-                Conservative Yeshiva  Development and maintenance of salary
-                survey using C#/ASP.Net and SQL-Server for The Jewish Federation
-                of North America (JFNA). Solve Global- Development and
-                maintenance of ASP.Net/MVC web application, using SQL-Server and
-                Linq to SQL which collects user data and generates reports which
-                are used to study workplace related injuries. Koren Publishers
-                Jerusalem- Contracted to help with the development of the Koren
-                Talmud Ipad App by reformatting printed version of the Koren
-                Talmud to the app version. Included extensive MySql and XML
-                manipulation using C# and Winforms. Davka Corp.- Lead developer
-                of Yom L’Yom the Jewish Calendar Maker, a C#/Winforms
+                <div>
+                  <div className="expirienceSubTitle">
+                    Research Success Data Systems
+                  </div>
+                  Development and maintenance of data management systems using
+                  C#/ASP.Net/MVC and SQL-Server for non-profit organizations
+                  including:
+                  <ul>
+                    <li>United Synagogue Youth (USY) </li>
+                    <li> Bnei Akiva </li>
+                    <li> The Jerusalem Bird Observatory </li>
+                    <li> The Conservative Yeshiva </li>
+                    <li>
+                      Development and maintenance of salary survey using
+                      C#/ASP.Net and SQL-Server for The Jewish Federation of
+                      North America (JFNA).
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="expirienceSubTitle">Solve Global</div>
+                  Development and maintenance of ASP.Net/MVC web application,
+                  using SQL-Server and Linq to SQL which collects user data and
+                  generates reports which are used to study workplace related
+                  injuries.
+                </div>
+                <div>
+                  <div className="expirienceSubTitle">
+                    Koren Publishers Jerusalem
+                  </div>
+                  Contracted to help with the development of the Koren Talmud
+                  Ipad App by reformatting printed version of the Koren Talmud
+                  to the app version. Included extensive MySql and XML
+                  manipulation using C# and Winforms.
+                </div>
+                <div>
+                  <div className="expirienceSubTitle">Davka Corp.</div>Lead
+                  developer of Yom L’Yom the Jewish Calendar Maker, a
+                  C#/Winforms
+                </div>
                 calendar/appointment maker.
               </ExperienceItem>
             </Section>

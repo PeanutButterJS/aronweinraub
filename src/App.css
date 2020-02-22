@@ -7,7 +7,7 @@
 
 .header {
   position: relative;
-  height: 150px;
+  height: 200px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -35,8 +35,13 @@
 }
 .title {
   margin: 10px 0;
-  letter-spacing: 3px;
+  letter-spacing: 1.5px;
   font-size: 2rem;
+}
+@media (min-width: 501px) {
+  .title {
+    letter-spacing: 3px;
+  }
 }
 
 .icon {
@@ -53,31 +58,33 @@
   font-size: 9.6rem;
 }
 .main {
-  width: 100%;
+  width: 95%;
   font-size: 1.6rem;
+  margin: auto;
+  padding-bottom: 10px;
 }
 .wrapper {
   display: flex;
-  margin: auto;
-  width: 95%;
+  width: 100%;
+  flex-wrap: wrap;
 }
-@media (min-width: 768px) {
-  .wrapper {
+@media (min-width: 1200px) {
+  .main {
     width: 85%;
   }
 }
 @media (min-width: 1550px) {
-  .wrapper {
+  .main {
     width: 70%;
   }
 }
 .section {
-  margin-top: 30px;
+  margin-top: 10px;
   font-size: 2rem;
   letter-spacing: 1px;
   font-family: "OpenSans-Regular";
 }
-@media (min-width: 768px) {
+@media (min-width: 501px) {
   .section {
     margin-top: 50px;
   }
@@ -88,36 +95,74 @@
   letter-spacing: 2px;
   font-family: "OpenSans-Bold", sans-serif;
 }
-@media (min-width: 768px) {
+@media (min-width: 501px) {
   .sectionTitle {
     margin: 0px 0 15px;
   }
 }
 .col1 {
-  width: 30%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  order: 2;
+}
+@media (min-width: 501px) {
+  .col1 {
+    width: 33%;
+    order: 1;
+  }
 }
 .contactInfo {
   display: flex;
-  justify-content: center;
   align-items: end;
-  padding: 20px;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-bottom: 10px;
 }
+@media (min-width: 501px) {
+  .contactInfo {
+    flex-direction: row;
+    padding: 17px;
+  }
+}
+@media (min-width: 768px) {
+  .contactInfo {
+    justify-content: center;
+  }
+}
+
 .contactInfoRow {
   display: flex;
   align-items: center;
-  padding: 0 20px;
-  font-size: 2rem;
+  padding: 10px 0 0;
+  font-size: 3.5rem;
+}
+@media (min-width: 501px) {
+  .contactInfoRow {
+    padding: 0 20px;
+    font-size: 2rem;
+  }
 }
 
 .contactInfoText {
   margin-left: 10px;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: rgb(0, 65, 106);
   font-family: "OpenSans-Regular";
   letter-spacing: 1px;
   text-decoration: none;
+}
+@media (min-width: 501px) {
+  .contactInfoText {
+    margin-left: 4px;
+    font-size: 1.4rem;
+    letter-spacing: 0;
+  }
+}
+@media (min-width: 768px) {
+  .contactInfoText {
+    font-size: 1.5rem;
+  }
 }
 .eduLine1 {
   font-size: 2rem;
@@ -138,7 +183,14 @@
   font-style: italic;
 }
 .col2 {
-  width: 70%;
+  width: 100%;
+  order: 1;
+}
+@media (min-width: 501px) {
+  .col2 {
+    width: 67%;
+    order: 2;
+  }
 }
 .skill {
   padding: 0 15px 0px 0;
@@ -189,7 +241,12 @@
 .position {
   font-size: 2rem;
   font-family: "OpenSans-Bold";
-  margin-top: -3px;
+  margin-top: 0px;
+}
+@media (min-width: 768px) {
+  .position {
+    margin-top: -4px;
+  }
 }
 .company {
   font-size: 1.7rem;
@@ -211,6 +268,11 @@
   background: #e4e5e6;
   border-radius: 50%;
   position: absolute;
-  top: 0;
+  top: -1px;
   right: -10px;
+}
+
+.expirienceSubTitle {
+  font-size: 1.6rem;
+  font-family: "OpenSans-Bold";
 }
