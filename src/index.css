@@ -364,15 +364,15 @@ template {
 }
 
 html {
-  font-size: 6px;
+  font-size: 10px; /*6px;*/
   background-color: #e4e5e6;
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   html {
     font-size: 10px;
   }
 }
-
+ */
 body {
   margin: 0;
   font-family: "OpenSans-Light", sans-serif;

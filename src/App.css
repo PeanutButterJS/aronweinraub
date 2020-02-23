@@ -36,10 +36,11 @@
 .title {
   margin: 10px 0;
   letter-spacing: 1.5px;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
-@media (min-width: 501px) {
+@media (min-width: 768px) {
   .title {
+    font-size: 2rem;
     letter-spacing: 3px;
   }
 }
@@ -63,11 +64,6 @@
   margin: auto;
   padding-bottom: 10px;
 }
-.wrapper {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-}
 @media (min-width: 1200px) {
   .main {
     width: 85%;
@@ -78,25 +74,33 @@
     width: 70%;
   }
 }
+.wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
 .section {
   margin-top: 10px;
   font-size: 2rem;
   letter-spacing: 1px;
   font-family: "OpenSans-Regular";
 }
-@media (min-width: 501px) {
+@media (min-width: 768px) {
   .section {
     margin-top: 50px;
   }
 }
 .sectionTitle {
   margin: 0px 0 8px;
-  font-size: 3rem;
+  font-size: 2.1rem;
   letter-spacing: 2px;
   font-family: "OpenSans-Bold", sans-serif;
 }
-@media (min-width: 501px) {
+
+@media (min-width: 768px) {
   .sectionTitle {
+    font-size: 3rem;
     margin: 0px 0 15px;
   }
 }
@@ -106,7 +110,7 @@
   flex-direction: column;
   order: 2;
 }
-@media (min-width: 501px) {
+@media (min-width: 768px) {
   .col1 {
     width: 33%;
     order: 1;
@@ -115,55 +119,43 @@
 .contactInfo {
   display: flex;
   align-items: end;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
   padding-bottom: 10px;
 }
-@media (min-width: 501px) {
-  .contactInfo {
-    flex-direction: row;
-    padding: 17px;
-  }
-}
 @media (min-width: 768px) {
   .contactInfo {
-    justify-content: center;
+    flex-direction: row;
+    padding: 17px 0;
   }
 }
 
 .contactInfoRow {
   display: flex;
   align-items: center;
-  padding: 10px 0 0;
-  font-size: 3.5rem;
+  padding: 10px 0px 0;
+  font-size: 2rem;
 }
-@media (min-width: 501px) {
+@media (min-width: 768px) {
   .contactInfoRow {
-    padding: 0 20px;
-    font-size: 2rem;
+    padding: 10px 10px 0;
   }
 }
 
 .contactInfoText {
   margin-left: 10px;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: rgb(0, 65, 106);
   font-family: "OpenSans-Regular";
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   text-decoration: none;
-}
-@media (min-width: 501px) {
-  .contactInfoText {
-    margin-left: 4px;
-    font-size: 1.4rem;
-    letter-spacing: 0;
-  }
 }
 @media (min-width: 768px) {
   .contactInfoText {
-    font-size: 1.5rem;
+    margin-left: 3px;
   }
 }
+
 .eduLine1 {
   font-size: 2rem;
   font-family: "OpenSans-Bold";
@@ -186,7 +178,7 @@
   width: 100%;
   order: 1;
 }
-@media (min-width: 501px) {
+@media (min-width: 768px) {
   .col2 {
     width: 67%;
     order: 2;
@@ -284,6 +276,9 @@
   font-size: 1.7rem;
   margin-bottom: 30px;
 }
+.project:last-child {
+  margin-bottom: 0px;
+}
 .projectLink {
   margin: 1px 0 8px;
   color: rgb(0, 65, 106);
@@ -305,4 +300,94 @@
   width: 100px;
   height: 100px;
   margin-left: -12px;
+}
+.lang {
+  font-size: 1.7rem;
+}
+
+@media print {
+  .col1 {
+    width: 33%;
+    order: 1;
+  }
+  .col2 {
+    width: 67%;
+    order: 2;
+  }
+  .contactInfo {
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 10px;
+  }
+  .pinskysPalletsImage,
+  .cingulantImage {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+  }
+  .gitShabisImage {
+    width: 70px;
+    height: 70px;
+    margin-left: -12px;
+  }
+  .projectTitle {
+    font-size: 1.6rem;
+  }
+  .project {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  .jobDetails {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+  .position {
+    font-size: 1.7rem;
+  }
+  .expirienceSubTitle {
+    font-size: 1.4rem;
+  }
+  .company {
+    font-size: 1.5rem;
+  }
+  .location {
+    font-size: 1.4rem;
+  }
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+  .header {
+    height: 175px;
+  }
+  .icon {
+    width: 150px;
+    height: 150px;
+    font-size: 7rem;
+  }
+  .yearsText {
+    font-size: 1.3rem;
+  }
+  .section {
+    margin-top: 30px;
+  }
+  .skill {
+    font-size: 0.9rem;
+  }
+  .lang {
+    font-size: 1.3rem;
+  }
+
+  .eduLine1 {
+    font-size: 1.7rem;
+  }
+  .eduLine2 {
+    font-size: 1.4rem;
+  }
+  .eduLine3 {
+    font-size: 1.3rem;
+  }
+  .eduLine4 {
+    font-size: 1.4rem;
+  }
 }

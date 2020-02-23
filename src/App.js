@@ -5,6 +5,8 @@ import { ContactInfo } from "./contact-info";
 import { Education } from "./education";
 import { Skills } from "./skills";
 import { Projects } from "./projects";
+import { Languages } from "./languages";
+import { Army } from "./army";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
             <Education />
             <Skills />
             <Projects />
+            <Army />
+            <Languages />
           </div>
           <div className="col2">
             <Experience />
