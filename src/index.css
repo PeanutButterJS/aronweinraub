@@ -362,8 +362,10 @@ template {
   font-family: "OpenSans-Bold";
   src: url("./fonts/OpenSans-Bold.ttf") format("truetype");
 }
+
 html {
   font-size: 6px;
+  background-color: #e4e5e6;
 }
 @media (min-width: 768px) {
   html {
@@ -381,4 +383,7 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+@page {
+  margin: 0;
 }

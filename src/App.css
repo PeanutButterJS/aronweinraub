@@ -259,7 +259,8 @@
 }
 .jobDetails {
   margin-top: 5px;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
+  line-height: 2.6rem;
 }
 .circle {
   width: 11px;
@@ -275,4 +276,33 @@
 .expirienceSubTitle {
   font-size: 1.6rem;
   font-family: "OpenSans-Bold";
+}
+.project {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 1.7rem;
+  margin-bottom: 30px;
+}
+.projectLink {
+  margin: 1px 0 8px;
+  color: rgb(0, 65, 106);
+}
+.projectTitle {
+  font-size: 2rem;
+  font-family: "OpenSans-Bold";
+  display: flex;
+  align-items: center;
+}
+.pinskysPalletsImage,
+.cingulantImage {
+  width: 65px;
+  height: 65px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.gitShabisImage {
+  width: 100px;
+  height: 100px;
+  margin-left: -12px;
 }
