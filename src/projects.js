@@ -18,7 +18,12 @@ export const Projects = () => (
           Cingulant Software
         </span>
 
-        <a className="projectLink" href="https://cingulantsoftware.now.sh/">
+        <a
+          className="projectLink"
+          href="https://cingulantsoftware.now.sh/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           cingulantsoftware.now.sh/
         </a>
         <span>A work in progress for a development consulting company.</span>
@@ -29,7 +34,12 @@ export const Projects = () => (
           Pinskys Pallets
         </span>
 
-        <a className="projectLink" href="https://pinskyspallets.now.sh/">
+        <a
+          className="projectLink"
+          href="https://pinskyspallets.now.sh/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           pinskyspallets.now.sh/
         </a>
         <span>A work in progress for a carpenters site.</span>
@@ -43,6 +53,8 @@ export const Projects = () => (
         <a
           className="projectLink"
           href="https://www.npmjs.com/package/git-shabis"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           www.npmjs.com/package/git-shabis
         </a>
