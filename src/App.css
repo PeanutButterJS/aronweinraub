@@ -118,7 +118,7 @@
 }
 .contactInfo {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   padding-bottom: 10px;
@@ -291,6 +291,7 @@
 }
 .pinskysPalletsImage,
 .cingulantImage {
+  border-radius: 5px;
   width: 65px;
   height: 65px;
   margin-right: 10px;
